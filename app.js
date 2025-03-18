@@ -9,13 +9,14 @@ function agregarAmigo(){
     let nuevoAmigo =(document.getElementById ('amigo').value);
         
     if (nuevoAmigo === "") {
-          alert ('Agrega un nombre válido')
+          asignarTextoElemento ('h2','Agrega un nombre válido')
          } else {
-         alert(`Has agregado a ${nuevoAmigo} como amigo.`)
+            asignarTextoElemento ('h2','¡Será un gran Challenge!')
          }
          console.log(nuevoAmigo);
     return;
 }
+
 
 asignarTextoElemento('h1','Challenge del amigo secreto');
 asignarTextoElemento('h2','Digite el nombre de sus reales');

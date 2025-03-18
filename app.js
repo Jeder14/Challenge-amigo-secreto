@@ -1,6 +1,6 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
-let cantidadAmigos = 1 
+//Creación de la variable tipo arreglo/lista/vector "amigos"
 let amigos = [];
 
 function asignarTextoElemento(elemento, texto){
@@ -12,7 +12,6 @@ function agregarAmigo(){
     const inputAmigo =(document.getElementById ('amigo').value);   
     const nuevoAmigo = inputAmigo.trim();
 
-    console.log(cantidadAmigos)
 
     if (nuevoAmigo === "") {
           asignarTextoElemento ('h2','Agrega un nombre válido')
@@ -21,12 +20,17 @@ function agregarAmigo(){
             alert(`El amigo ${nuevoAmigo} ya está incluido`)
          }
          else {
+            //agregar elementos al final de la lista
             amigos.push(nuevoAmigo);
-            asignarTextoElemento ('h2',`Agregaste ${cantidadAmigos} ${(cantidadAmigos ===1)? 'amigo':'amigos'}, ¡Será un gran Challenge!`)
-            cantidadAmigos++; 
+            asignarTextoElemento ('h2',`Agregaste ${amigos.length} ${(nuevoAmigo.length ===1)? 'amigo':'amigos'}, ¡Será un gran Challenge!`)
+
+            console.log(nuevoAmigo);
+            actualizarLista();
+            console.log(amigos);
         }
-         limpiarCaja();
-         console.log(nuevoAmigo);
+        limpiarCaja();
+        
+
     return;
 }
 
@@ -35,6 +39,14 @@ function limpiarCaja(){
 
 }
 
+// Utilizando el contenedor listaAmigos
+
+function actualizarLista(){
+    const listaAmigos = document.getElementById('listaAmigos');
+    
+    listaAmigos.innerHTML = "";
+
+}
 
 
 

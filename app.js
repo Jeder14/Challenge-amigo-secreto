@@ -1,5 +1,3 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-
 //Creación de la variable tipo arreglo/lista/vector "amigos"
 let amigos = [];
 //Creación de la varible que permitirá limitar los intentos

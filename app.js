@@ -2,15 +2,19 @@
 
 //Creación de la variable tipo arreglo/lista/vector "amigos"
 let amigos = [];
+//Creación de la varible que permitirá limitar los intentos
 let listaNombreSorteado = [];
 let numeroMaximoSorteos = 0;
 
+//Cambio en h1 y h2
 function asignarTextoElemento(elemento, texto){
     let elementoHTML = document.querySelector(elemento);
     if (elementoHTML){
         elementoHTML.innerHTML=texto;
     }
 }
+
+//Funcion agregar amigo, alerta de espacio vacío y repetición de nombre
 function agregarAmigo(){
     const inputAmigo =(document.getElementById ('amigo').value);   
     const nuevoAmigo = inputAmigo.trim();
@@ -21,23 +25,23 @@ function agregarAmigo(){
         alert(`El amigo ${nuevoAmigo} ya está incluido`);
     } else {
         //agregar elementos al final de la lista
-         amigos.push(nuevoAmigo);
-         asignarTextoElemento ('h2',`Agregaste ${amigos.length} ${(nuevoAmigo.length ===1)? 'amigo':'amigos'}, ¡Será un gran Challenge!`)
-         console.log(nuevoAmigo);
-         console.log(amigos);
-         actualizarLista();
-         numeroMaximoSorteos = amigos.length;
+        amigos.push(nuevoAmigo);
+        asignarTextoElemento ('h2',`Agregaste ${amigos.length} ${(amigos.length ===1)? 'amigo':'amigos'}, ¡Será un gran Challenge!`)
+        console.log(nuevoAmigo);
+        console.log(amigos);
+        actualizarLista();
+        numeroMaximoSorteos = amigos.length;
     }
     limpiarCaja();
 }
 
+//Limpieza de caja para facilitar la entrada de datos
 function limpiarCaja(){
     document.getElementById('amigo').value = '';
 
 }
 
 // Utilizando el contenedor listaAmigos
-
 function actualizarLista(){
     const listaAmigos = document.getElementById('listaAmigos');
     listaAmigos.innerHTML = "";
@@ -50,7 +54,7 @@ function actualizarLista(){
     }
 }
 
-//Sorteo 
+//Fase de Sorteo 
 function sortearAmigo(){
     //Se muestra el sorteo en la pagina
     const resultadoSorteo = document.getElementById('resultado');
@@ -65,6 +69,8 @@ function sortearAmigo(){
          asignarTextoElemento('h2', 'Todos los amigos ya fueron sorteados');
          return;
      } 
+    
+     //Condición que limita la elección de un amigo sorteado
      let amigoSorteado;
      do {
          const indiceAleatorio = Math.floor(Math.random() * amigos.length);
@@ -80,7 +86,6 @@ function sortearAmigo(){
          console.log(resultadoSorteo)
          console.log(listaNombreSorteado)
  }
-
-
+ //Muestra inicial de h1 y h2
 asignarTextoElemento('h1','Challenge del amigo secreto');
 asignarTextoElemento('h2','Digite el nombre de sus reales');

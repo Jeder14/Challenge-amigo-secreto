@@ -50,5 +50,37 @@ function actualizarLista(){
     }
 }
 
+//Sorteo 
+function sortearAmigo(){
+    //Se muestra el sorteo en la pagina
+    const resultadoSorteo = document.getElementById('resultado');
+    
+     //Si hay menos de 2 amigos
+    if (amigos.length < 2){
+         asignarTextoElemento ('h2', 'Hay menos de 2 amigos, no puede realizarse el sorteo')
+         return;
+     }
+     //Si todos los amigos ya fueron sorteados
+     if (listaNombreSorteado.length === numeroMaximoSorteos) {
+         asignarTextoElemento('h2', 'Todos los amigos ya fueron sorteados');
+         return;
+     } 
+     let amigoSorteado;
+     do {
+         const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+         amigoSorteado = amigos[indiceAleatorio];
+     } while (listaNombreSorteado.includes(amigoSorteado));
+     listaNombreSorteado.push(amigoSorteado);
+     
+         // Mostrando el resultado 
+         const li = document.createElement('li');
+         li.textContent = `Amigo sorteado: ${amigoSorteado}`;
+         resultadoSorteo.appendChild(li);
+ 
+         console.log(resultadoSorteo)
+         console.log(listaNombreSorteado)
+ }
+
+
 asignarTextoElemento('h1','Challenge del amigo secreto');
 asignarTextoElemento('h2','Digite el nombre de sus reales');

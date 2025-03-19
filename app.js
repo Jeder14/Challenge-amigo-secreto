@@ -86,4 +86,4 @@ function sortearAmigo(){
  }
  //Muestra inicial de h1 y h2
 asignarTextoElemento('h1','Challenge del amigo secreto');
-asignarTextoElemento('h2','Digite el nombre de sus reales');
+asignarTextoElemento('h2','Digite el nombre de sus amigos');

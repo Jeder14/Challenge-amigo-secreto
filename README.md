@@ -1,14 +1,14 @@
 # 🎉 Challenge del Amigo Secreto
 
-![Portada del Proyecto](https://via.placeholder.com/800x300.png?text=Challenge+del+Amigo+Secreto)
+![Portada del Proyecto](https://github.com/Jeder14/Challenge-amigo-secreto/blob/4bd8f42fb14536abd5abeb812093f522ce7e6a33/portada.png)
 
 ## 🏅 Insignias
 
-![Badge1](https://img.shields.io/badge/status-en%20desarrollo-orange)
-![Badge2](https://img.shields.io/badge/contributors-1-blue)
-![Badge3](https://img.shields.io/badge/Reto-Desafío-orange)
-![Badge4](https://img.shields.io/badge/Programación-JavaScript-blue)
-![Badge5](https://img.shields.io/badge/Aprendizaje-Continuo-success)
+![Badge1](https://img.shields.io/badge/Status-Concluido-green)
+![Badge2](https://img.shields.io/badge/Contributors-1-red)
+![Badge3](https://img.shields.io/badge/Reto-Desafío-purple)
+![Badge4](https://img.shields.io/badge/Programación-JavaScript-pink)
+![Badge5](https://img.shields.io/badge/Aprendizaje-Continuo-teal)
 
 ## 📌 Índice
 

@@ -1,4 +1,3 @@
-# Challenge-amigo-secreto
 # 🎉 Challenge del Amigo Secreto
 
 ![Portada del Proyecto](https://via.placeholder.com/800x300.png?text=Challenge+del+Amigo+Secreto)
@@ -42,22 +41,24 @@ ste proyecto tiene como objetivo fortalecer las habilidades en lógica de progra
 ## 🔗 Acceso al Proyecto
 
 Puedes acceder al código fuente del proyecto en el siguiente enlace: 
-[Repositorio en GitHub](https://github.com/tu-usuario/amigo-secreto)
+[Repositorio en GitHub](https://github.com/Jeder14/Challenge-amigo-secreto.git)
 
 ## 🛠 Tecnologías utilizadas
-
+- JavaScript (DOM)
+- HTML
+### Base
 - HTML
 - CSS
-- JavaScript (DOM Manipulation)
+
 
 ## 🤝 Personas Contribuyentes
 
-- [Nombre del Contribuyente](https://github.com/usuario)
+- [AluraLatam](https://github.com/alura-es-cursos )
 
 ## 👩‍💻 Personas Desarrolladoras del Proyecto
 
-- [Tu Nombre](https://github.com/tu-usuario)
+- [Selene Gonzales](https://github.com/Jeder14?tab=repositories)
 
 ## 📜 Licencia
 
-Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia MIT.
